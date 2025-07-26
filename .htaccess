@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{HTTP_HOST} ^cryptocurrencypricesnow\.com [NC]
+  RewriteRule ^(.*)$ https://www.cryptocurrencypricesnow.com/$1 [L,R=301]
+
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+  
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  
+  Header always set Content-Security-Policy "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
+
+  Header set X-Content-Type-Options "nosniff"
+  
+  Header always set X-Frame-Options "DENY"
+  
+  Header always set Referrer-Policy "unsafe-url"
+  
+   Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), fullscreen=(self), vibrate=(self)"
+
+</IfModule>

@@ -1,0 +1,78 @@
+footer {
+  width: 100%;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // height: 70px;
+  padding: 20px 0px;
+  background-color: white;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.wrapper-footer {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  & img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  & p {
+    font-size: 1.75em;
+    font-family: "GravitypeMinigap", sans-serif;
+  }
+}
+
+.coingecko-link {
+  color: #3861fb;
+}
+
+.footer-provided {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-right {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-info {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-info-about {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+
+  p {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-left: 20px;
+    list-style-type: square;
+  }
+}

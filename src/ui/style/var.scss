@@ -1,0 +1,72 @@
+$color-up: #0ecb81;
+$color-down: #f6465d;
+$color-fav: orange;
+$color-gl-value: #1c3eff;
+
+$color-meta: #f6851b;
+
+$color-dark: #262930;
+$color-darkgray: #575757;
+$color-border: #d6d6d6;
+
+$color-ext-fear: #ff4242;
+$color-fear: #ff8000;
+$color-neutral: #ffd700;
+$color-greed: #50e750;
+$color-ext-greed: #36bdff;
+
+.color-ext-fear {
+  color: $color-ext-fear;
+}
+
+.color-fear {
+  color: $color-fear;
+}
+
+.color-neutral {
+  color: $color-neutral;
+}
+
+.color-greed {
+  color: $color-greed;
+}
+
+.color-ext-greed {
+  color: $color-ext-greed;
+}
+
+.background-color-ext-fear {
+  background-color: $color-ext-fear;
+}
+
+.background-color-fear {
+  background-color: $color-fear;
+}
+
+.background-color-neutral {
+  background-color: $color-neutral;
+}
+
+.background-color-greed {
+  background-color: $color-greed;
+}
+
+.background-color-ext-greed {
+  background-color: $color-ext-greed;
+}
+
+.chart-red {
+  color: $color-down;
+}
+
+.chart-green {
+  color: $color-up;
+}
+
+.background-red {
+  background-color: $color-down;
+}
+
+.background-green {
+  background-color: $color-up;
+}

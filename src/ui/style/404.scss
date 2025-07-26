@@ -1,0 +1,78 @@
+.notfound {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 520px;
+}
+
+.notfound-404 {
+  position: relative;
+  height: 240px;
+}
+
+.notfound h1 {
+  font-family: montserrat, sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 15.75rem;
+  font-weight: 900;
+  margin: 0;
+  color: #262626;
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+
+.notfound h1 > span {
+  text-shadow: -8px 0 0 #fff;
+}
+
+.notfound h2 {
+  font-family: cabin, sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000;
+  margin-top: 0;
+}
+
+.notfound h3 {
+  font-family: cabin, sans-serif;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #262626;
+  margin: 0;
+  letter-spacing: 3px;
+  padding-left: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .notfound-404 {
+    height: 200px;
+  }
+  .notfound-404 h1 {
+    font-size: 12.5rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .notfound-404 {
+    height: 162px;
+  }
+  .notfound-404 h1 {
+    font-size: 10rem;
+    height: 150px;
+    line-height: 162px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
